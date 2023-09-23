@@ -56,6 +56,18 @@ header {
 .left-sec {
   margin: 20px;
 }
+.left-sec h1{
+  font-size: 1.4rem;
+}
+.head{
+  font-size: 2.5rem;
+}
+h1,span{
+  letter-spacing: 5px
+}
+.dev{
+  color: #66ccff;
+}
 .left-sec h2 {
   font-size: 2rem;
   color: #66ccff;
@@ -76,10 +88,9 @@ header {
   justify-content: start;
   align-items: center;
   box-shadow: 0px 0px 15px #00000027;
-  padding: 5px;
+  padding: 5px 0px;
   width: 200px;
   margin-top: 15px;
-  float: right;
 }
 
 .social-button {
@@ -89,7 +100,7 @@ header {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  margin: 0 10px;
+  margin-right: 20px;
   background-color: #fff;
   box-shadow: 0px 0px 4px #00000027;
   transition: 0.3s;
@@ -104,7 +115,6 @@ header {
   transition: 0.3s;
   height: 20px;
 }
-
 .facebook {
   background-color: #3b5998;
 }
@@ -220,6 +230,7 @@ header {
   color: #fff;
   border-radius: 5px;
   padding: 10px 25px;
+  margin-top: 10px;
   font-family: "Lato", sans-serif;
   font-weight: 500;
   background: transparent;
@@ -529,7 +540,7 @@ input:hover {
     text-align: center;
   }
   .right-sec {
-    margin-top: 60px;
+    margin-top: 80px;
   }
   .left-sec h2 {
     font-size: 1.5rem;
