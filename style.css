@@ -16,16 +16,15 @@ header {
 }
 .nav-bar {
   background-color: #202f4a;
-  height: 60px;
+  height: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .heading {
   margin: 30px;
   padding-left: 10px;
   color: #66ccff;
-  letter-spacing: 8px;
 }
 .nav-sections {
   display: flex;
@@ -49,7 +48,7 @@ header {
   background-color: #142035;
   height: 100vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   color: whitesmoke;
 }
@@ -57,13 +56,7 @@ header {
   margin: 20px;
 }
 .left-sec h1{
-  font-size: 1.4rem;
-}
-.head{
   font-size: 2.5rem;
-}
-h1,span{
-  letter-spacing: 5px
 }
 .dev{
   color: #66ccff;
@@ -77,10 +70,11 @@ h1,span{
   margin-top: 15px;
 }
 .left-sec p {
+  font-size: 1.1rem;
   max-width: 500px;
   text-align: justify;
   margin-top: 15px;
-  line-height: 25px;
+  line-height: 30px;
 }
 /* Social Buttons */
 .social-buttons {
@@ -89,7 +83,7 @@ h1,span{
   align-items: center;
   box-shadow: 0px 0px 15px #00000027;
   padding: 5px 0px;
-  width: 200px;
+  width: 250px;
   margin-top: 15px;
 }
 
@@ -113,18 +107,32 @@ h1,span{
 
 .social-buttons svg {
   transition: 0.3s;
-  height: 20px;
+  height: 19px;
 }
-.facebook {
-  background-color: #3b5998;
+.leetcode {
+  background-color: #000000;
 }
 
-.facebook svg {
+.leetcode svg {
   fill: #f2f2f2;
+  height: 26px;
 }
 
-.facebook:hover svg {
-  fill: #3b5998;
+.leetcode:hover svg {
+  fill: #020815;
+}
+
+.dev-icon{
+  background-color: #000000;
+}
+.dev-icon svg{
+  height: 28px;
+}
+.dev-icon:hover{
+  background-color: #0e0e0e;
+}
+.dev-icon:hover svg{
+  fill: #000000;
 }
 
 .github {
@@ -152,7 +160,6 @@ h1,span{
 .linkedin:hover svg {
   fill: #0077b5;
 }
-
 .instagram {
   background-color: #c13584;
 }
@@ -163,6 +170,10 @@ h1,span{
 
 .instagram:hover svg {
   fill: #c13584;
+}
+
+.home-btn{
+  display: flex;
 }
 
 /* Resume Download Btn */
@@ -203,6 +214,21 @@ h1,span{
   text-decoration: none;
   color: white;
 }
+.hire-me{
+  background: rgb(91, 113, 255);
+  background: linear-gradient(
+    0deg,
+    rgb(52, 66, 255) 0%,
+    rgb(112, 102, 255) 100%
+  );
+  border: 2px solid rgb(178, 169, 255);
+  margin-right: 20px;
+  padding: 0 19px;
+}
+.hire-me:hover{
+  box-shadow: 0 0.5em 1.5em -0.5em rgb(105, 107, 255);
+}
+
 .right-sec img {
   width: 280px;
   overflow: hidden;
@@ -213,68 +239,13 @@ h1,span{
   scale: 1.1;
 }
 
-/* About */
-#about {
-  height: 100vh;
-  background-color: #2a3b5a;
-}
-.content {
-  max-height: 100px;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
-}
-/* Style the "Read More" button */
-.read-more-button {
-  width: 130px;
-  height: 40px;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px 25px;
-  margin-top: 10px;
-  font-family: "Lato", sans-serif;
-  font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: inline-block;
-  outline: none;
-  float: right;
-  background: rgb(102, 204, 255);
-  background: linear-gradient(
-    0deg,
-    rgb(26, 104, 143) 0%,
-    rgba(102, 204, 255, 1) 100%
-  );
-  border: 2px solid rgba(102, 204, 255, 1);
-  border-radius: 20em;
-}
-.read-more-button:hover {
-  border-color: white;
-  box-shadow: 0 0.5em 1.5em -0.5em rgba(102, 204, 255, 1);
-  cursor: pointer;
-}
-
-.read-more-button:active {
-  box-shadow: 0 0.3em 1em -0.5em rgba(102, 204, 255, 1);
-}
-
-.read-more-button:hover {
-  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
-    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
-    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
-    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
-}
-/* Style the button when it's expanded */
-.expanded .content {
-  max-height: none;
-}
 
 /* Skill Section */
 #skills {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #142035;
+  background-color: #2a3b5a;
   justify-content: center;
   align-items: center;
 }
@@ -320,9 +291,9 @@ h1,span{
 /* Projects */
 #projects {
   margin: 0 auto;
-  padding: 20px;
+  padding: 60px;
   max-width: 100%;
-  background-color: #2a3b5a;
+  background-color: #142035;
 }
 #projects h2 {
   font-size: 2rem;
@@ -394,7 +365,7 @@ h1,span{
 
 /* Contact Me */
 #contact {
-  background-color: #142035;
+  background-color: #2a3b5a;
   color: whitesmoke;
   padding: 40px 20px;
 }
